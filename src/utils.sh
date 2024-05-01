@@ -13,9 +13,9 @@ get_tmux_option() {
 }
 
 function generate_left_side_string() {
-  local separator_end="#[bg=${PALLETE[bg_highlight]}]#{?client_prefix,#[fg=${PALLETE[yellow]}],#[fg=${PALLETE[green]}]}${left_separator:?}#[none]"
+  local separator_end="#[bg=${PALLETE[dark5]}]#{?client_prefix,#[fg=${PALLETE[yellow]}],#[fg=${PALLETE[dark5]}]}${left_separator:?}#[none]"
 
-  echo "#[fg=${PALLETE[fg_gutter]},bold]#{?client_prefix,#[bg=${PALLETE[yellow]}],#[bg=${PALLETE[green]}]}  #S ${separator_end}"
+  echo "#[fg=${PALLETE[fg_gutter]},bold]#{?client_prefix,#[bg=${PALLETE[yellow]}],#[bg=${PALLETE[dark5]}]} #S${separator_end}"
 }
 
 function generate_inactive_window_string() {

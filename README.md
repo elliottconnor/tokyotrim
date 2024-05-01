@@ -15,6 +15,9 @@
     
 </div>
 
+Taking a hatchet to fabioluciano/tmux-tokyo-night in order to streamline and make space for other plugins.  
+
+
 ## Features
 
 ## Screenshots

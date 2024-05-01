@@ -50,7 +50,7 @@ tmux set-window-option -g window-status-format "$(generate_inactive_window_strin
 tmux set-window-option -g window-status-current-format "$(generate_active_window_string)"
 
 ### Right side
-tmux set-option -g status-right ""
+#tmux set-option -g status-right ""
 
 # Check if plugins array is empty before proceeding
 if [ "$theme_disable_plugins" -ne 1 ]; then
@@ -60,7 +60,7 @@ if [ "$theme_disable_plugins" -ne 1 ]; then
   for plugin in "${plugins[@]}"; do
 
     if [ ! -f "${CURRENT_DIR}/plugin/${plugin}.sh" ]; then
-      tmux set-option -ga status-right "${plugin}"
+#      tmux set-option -ga status-right "${plugin}"
     else
       if [ "$plugin" == "$last_plugin" ];then 
         is_last_plugin=1
@@ -93,7 +93,7 @@ if [ "$theme_disable_plugins" -ne 1 ]; then
         plugin_output_string="${plugin_icon_output}${plugin_output}"
       fi
 
-      tmux set-option -ga status-right "$plugin_output_string"
+#      tmux set-option -ga status-right "$plugin_output_string"
     fi 
   done
 fi
